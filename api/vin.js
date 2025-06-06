@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   }
 
   const API_KEY = "c7ca89c5-1cad-4292-a7ac-26ab859d96ed";
-  const apiUrl = `https://api.carapi.app/api/v2/vin/${vin}?apikey=${API_KEY}`;
+  const apiUrl = `https://api.carapi.app/v2/vehicles/vin/${vin}?apikey=${API_KEY}`;
 
   try {
     const response = await fetch(apiUrl);
